@@ -1,6 +1,6 @@
-title: 开始使用redux
+title: 开始使用Redux(一)
 date: 2016-02-22 20:08:13
-tags: React Native, Redux
+tags: [React Native, Redux]
 ---
 
 第一次接触这种涉及到产品架构的框架，整体的理解难度简直爆表，今天来根据RN中文网的这一篇帖子[用RN( ListView + Navigator ) + Redux来开发一个ToDoList](http://bbs.reactnative.cn/topic/26/%E7%94%A8rn-listview-navigator-redux%E6%9D%A5%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AAtodolist/2) 来分析一下如何在一个RN应用中使用Redux框架。
