@@ -37,6 +37,8 @@ tags: [Regular, NETEASE]
       
 - ### set(context, value)
 
+<!-- more -->
+
 同样还是看DEMO，很好理解
 
     // component as context

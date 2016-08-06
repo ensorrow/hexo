@@ -42,6 +42,8 @@ get请求除了query string的形式，还可以通过请求路径来传递信�
 		console.log(req.params.netid);
 	})
 
+<!-- more -->
+
 把http请求结合一下ajax，就是这个样子了：
 
 	//前端
