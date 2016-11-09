@@ -3,11 +3,11 @@ date: 2016-03-10 21:12:17
 tags: [EUX]
 ---
 
-准备工作：Node环境（搜索node.js安装即可） & git环境
+准备工作：Node环境（搜索node.js安装即可） & git环境 & cnpm（自行百度安装）
 
 ### 一、安装配置mongoDB
 
-MAC下可以使用Homebrew直接安装（200多m，慢的一比），Windows下貌似也可以直接安装exe。安装完以后自行在根目录下建一个data文件夹，终端运行
+MAC下可以使用Homebrew直接安装（200多m，慢的一比），Windows下貌似也可以直接安装exe。安装完以后自行在根目录（怎么方便怎么建，注意windows下尽量放C盘避免权限问题）下建一个data文件夹，终端运行
 
 	mongod --dbpath /*data文件夹路径*/
 
@@ -17,15 +17,18 @@ MAC下可以使用Homebrew直接安装（200多m，慢的一比），Windows下�
 
 数据库就配置完毕了。推荐安装Robomongo来可视化的管理数据库（不然太抽象了😂），貌似Windows，Linux，Mac都有。使用可视化管理工具的方法也很简单，先保证终端的数据库在运行，然后新建一个connect到对应端口就行啦。
 
-### 二、安装配置gulp
+### 二、安装node依赖
 
-打开终端运行
+首先终端cd到eux目录，然后直接运行`cnpm install`。不出意外的话就能安装好，但是一般意外比较多，大概有以下几种错误：
 
-	npm install gulp -g
+1. node-gyp错误：如果提示找不到命令的话就全局安装它`cnpm install node-gyp -g`.其他编译错误首先到npm官网搜索node-gyp这个包看看它的文档，一般来说可能是电脑上缺少python环境，具体的自己查一下文档
+2. （TODO)
 
-全局的gulp安装完以后到eux的目录下测试一下gulp能不能直接运行（反正我的不能，node版本不匹配），gulp-sass报错。解决办法也很暴力，先`npm init`来保证package.json的完整性，然后删掉node_modules，再次运行npm install等待半小时即可😂（开个玩笑，十分钟吧）。
+然后全局安装gulp，打开终端运行
 
-正常的话再次运行gulp就编译过啦，然后打开localhost:3000就可以看到运行结果了，就是我们酷酷的EUX首页了。
+	cnpm install gulp -g
+
+再进入eux目录执行`gulp`，正常的话再次运行gulp就编译过啦，然后打开localhost:3000就可以看到运行结果了，就是我们酷酷的EUX首页了。
 
 <!-- more -->
 
