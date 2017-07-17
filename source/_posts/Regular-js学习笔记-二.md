@@ -1,7 +1,7 @@
 title: Regular学习笔记(二)
 date: 2016-08-01 19:47:01
 tags: [Regular, NETEASE]
-thumbnail: https://ensorrow.github.io/images/regular-thum.png
+thumbnail: /images/regular-thum.png
 ---
 
 # PART1. 静态接口

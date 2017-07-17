@@ -1,6 +1,6 @@
 title: jQuery入门
 date: 2016-03-17 23:37:48
-tags: [eeyes, jquery]
+tags: [eeyes, jQuery]
 ---
 
 ### 一、什么是jQuery?
@@ -56,9 +56,9 @@ DOM遍历是啥意思呢？就是指你获取了一个DOM元素以后假如你�
 	console.log(test.childNodes);
 	//会返回一个由文本节点和元素节点组成的Nodelist数组；父元素就是parentNode,返回单个元素
 
-运行结果图： ![NodeList](https://ensorrow.github.io/images/NodeList.png)
+运行结果图： ![NodeList](/images/NodeList.png)
 
-说一下nodeType，放一张图就懂了 ![nodeType](https://ensorrow.github.io/images/nodeType.png)
+说一下nodeType，放一张图就懂了 ![nodeType](/images/nodeType.png)
 
 获取兄弟元素：
 	
@@ -80,8 +80,8 @@ DOM遍历是啥意思呢？就是指你获取了一个DOM元素以后假如你�
 
 还有很重要很重要的一点，jquery获取到的是支持jquery方法的对象，不同与普通DOM对象，可以看看区别
 
-![普通DOM对象](https://ensorrow.github.io/images/DOMobj.png)
-![jquery对象](https://ensorrow.github.io/images/JQobj.png)
+![普通DOM对象](/images/DOMobj.png)
+![jquery对象](/images/JQobj.png)
 
 所以以后不要把js的方法用在jquery对象上啦。顺便提一下，DOM查找遍历是挺消耗性能的，如果有多次调用的需求就把查找结果保存在变量里，不要像这样写：
 
@@ -124,8 +124,8 @@ addEventListener( type, function, userCapture)默认采用的是冒泡阶段捕�
 
 DEMO里userCapture为true，则在事件捕获阶段执行，即你点击了inner以后，outer的点击事件先执行了。盗两张图使一下：
 
-![捕获阶段](https://ensorrow.github.io/images/buhuo.png)
-![冒泡](https://ensorrow.github.io/images/maopao.png)
+![捕获阶段](/images/buhuo.png)
+![冒泡](/images/maopao.png)
 
 很好懂吧~
 

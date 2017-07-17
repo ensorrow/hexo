@@ -11,7 +11,7 @@ language: zh-CN
 
 # URL
 ## 暂时不需要配置
-url: http://ensorrow.github.io
+url: http://lvzheyang.top/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
